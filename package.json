@@ -1,0 +1,14 @@
+{
+  "name": "hearth",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "tools": "bash scripts/fetch-tools.sh",
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "icon": "tauri icon app-icon.png"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}

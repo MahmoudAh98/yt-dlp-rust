@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Hearth",
+  "version": "1.0.0",
+  "identifier": "app.hearth.downloader",
+  "build": {
+    "frontendDist": "../ui"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "Hearth",
+        "width": 1240,
+        "height": 820,
+        "minWidth": 1000,
+        "minHeight": 680,
+        "center": true,
+        "decorations": false,
+        "resizable": true,
+        "backgroundColor": "#F4EEE6"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' https: data:; media-src 'self' https: blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src ipc: http://ipc.localhost"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "category": "Video",
+    "shortDescription": "Warm, minimal YouTube downloader",
+    "longDescription": "Download videos, playlists, clips and audio from YouTube with a calm, beautiful interface. Powered by yt-dlp and ffmpeg.",
+    "resources": { "tools/": "tools/" },
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": { "installMode": "currentUser" }
+    }
+  }
+}

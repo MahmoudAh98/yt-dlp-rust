@@ -1,0 +1,16 @@
+# Rust / Tauri
+src-tauri/target/
+src-tauri/gen/
+
+# yt-dlp / ffmpeg are downloaded by scripts/fetch-tools.sh (too big for git)
+src-tauri/tools/
+
+# Node
+node_modules/
+package-lock.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
